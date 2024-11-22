@@ -6,12 +6,12 @@ import (
 	"io"
 	"strings"
 
-	"github.com/prebid/prebid-server/v2/macros"
-	"github.com/prebid/prebid-server/v2/metrics"
+	"github.com/prebid/prebid-server/v3/macros"
+	"github.com/prebid/prebid-server/v3/metrics"
 )
 
 const (
-	emptyAdmResponse = `<VAST version="3.0"><Ad><Wrapper><AdSystem>prebid.org wrapper</AdSystem><VASTAdTagURI><![CDATA[%s]]></VASTAdTagURI><Creatives></Creatives></Wrapper></Ad></VAST>`
+	emptyAdmResponse = `<VAST version="3.0"><Ad><Wrapper><AdSystem>prebid.org wrapper</AdSystem><VASTAdTagURI><![CDATA[%s]]></VASTAdTagURI><Impression></Impression><Creatives></Creatives></Wrapper></Ad></VAST>`
 )
 
 const (
